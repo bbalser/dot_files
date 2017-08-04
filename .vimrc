@@ -11,8 +11,8 @@ autocmd BufWritePre * %s/\s\+$//e
 call plug#begin('~/.vim/plugged')
 
 Plug 'elixir-lang/vim-elixir'
-Plug 'scrooloose/nerdtree'
-
+Plug 'bling/vim-airline'
+Plug 'fholgado/minibufexpl.vim'
 
 
 call plug#end()
