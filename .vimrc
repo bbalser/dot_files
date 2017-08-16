@@ -13,6 +13,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'elixir-lang/vim-elixir'
 Plug 'bling/vim-airline'
 Plug 'fholgado/minibufexpl.vim'
+Plug 'kien/ctrlp.vim'
 
 
 call plug#end()
