@@ -8,6 +8,7 @@ set nobackup
 set noswapfile
 colorscheme slate
 autocmd BufWritePre * %s/\s\+$//e
+nnoremap <F5> :buffers<CR>:buffer<Space>
 call plug#begin('~/.vim/plugged')
 
 Plug 'elixir-lang/vim-elixir'
