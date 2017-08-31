@@ -6,15 +6,20 @@ set nu
 set expandtab
 set nobackup
 set noswapfile
-colorscheme slate
 autocmd BufWritePre * %s/\s\+$//e
 nnoremap <F5> :CtrlPBuffer<CR>
 call plug#begin('~/.vim/plugged')
 
 Plug 'elixir-lang/vim-elixir'
-Plug 'bling/vim-airline'
-Plug 'fholgado/minibufexpl.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'weynhamz/vim-plugin-minibufexpl'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'NLKNguyen/papercolor-theme'
 
 
 call plug#end()
+
+set background=dark
+colorscheme PaperColor
+let g:airline_theme='papercolor'
