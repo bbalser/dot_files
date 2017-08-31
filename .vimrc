@@ -13,7 +13,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'elixir-lang/vim-elixir'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'weynhamz/vim-plugin-minibufexpl'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'NLKNguyen/papercolor-theme'
 
@@ -23,3 +22,4 @@ call plug#end()
 set background=dark
 colorscheme PaperColor
 let g:airline_theme='papercolor'
+let g:airline#extensions#tabline#enabled = 1
