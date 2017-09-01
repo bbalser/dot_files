@@ -6,6 +6,8 @@ set nu
 set expandtab
 set nobackup
 set noswapfile
+set foldmethod=indent
+set foldlevelstart=5
 autocmd BufWritePre * %s/\s\+$//e
 nnoremap <F5> :CtrlPBuffer<CR>
 call plug#begin('~/.vim/plugged')
