@@ -6,8 +6,12 @@ set nu
 set expandtab
 set nobackup
 set noswapfile
+set smartcase
 set foldmethod=indent
-set foldlevelstart=5
+set foldlevelstart=20
+set viminfo^=h
+set hlsearch
+nnoremap <F3> :noh<CR>
 autocmd BufWritePre * %s/\s\+$//e
 nnoremap <F5> :CtrlPBuffer<CR>
 call plug#begin('~/.vim/plugged')
